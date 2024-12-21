@@ -1,0 +1,32 @@
+.admin-menu{
+    margin-top: 30%;
+    overflow: hidden;
+}
+
+.admin-menu a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.admin-menu a:hover {
+    color: gold;
+    border-radius: 25px;
+    backdrop-filter: blur(5000px);
+    transition: .5s ease;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #0a67a3, #043366);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}

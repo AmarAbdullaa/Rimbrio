@@ -1,0 +1,371 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: Georgia,serif;
+}
+
+.menu-bar{
+    padding: 0 2%;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    height: 90px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 2px solid #000000;
+}
+
+.menu-bar-logo{
+    margin: 10px 20px 0px 0px;
+    padding: 10px 15px 10px 0;
+    flex: 1;
+}
+
+.menu-bar a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+    padding: 27.5px 20px 20px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.menu-bar a:hover{
+    color: gold;
+    border-radius: 25px;
+}
+
+.menu-bar div{
+    align-items: center;
+    margin: 10px 20px 5px 20px;
+}
+/* dropdown */
+#menu-options {
+    position: relative;
+}
+
+.user-dropdown {
+    display: inline-block;
+}
+
+.user-dropdown button {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer
+}
+
+.user-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.3s ease;
+}
+
+.user-content a{
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.user-content a:hover {
+    background-color: #000000;
+    border-radius: 0;
+}
+
+.user-dropdown:hover .user-content {
+    display: block;
+}
+
+.footer{
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin: 0;
+    position: relative;
+    padding-bottom: 50px;
+    
+    text-align: center;
+}
+
+.footer img{
+    height: 125px;
+    width: 200px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.contact{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.social-media{
+    font-size: 30px;
+}
+
+.social-media a {
+    margin-right: 20px;
+}
+
+.social-media a:hover {
+    color: gold;
+    transition: 0.3s ease;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.bookings-image {
+    padding: 100px;
+    margin: 0;    
+    height: 100vh;
+    background-image: url(./image/bookings.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+
+/* cover */
+#cover{
+	min-height: 200px;
+	background: url('../img/cover.webp') no-repeat;
+	text-align: center;
+  color: whitesmoke;
+  padding-top: 90px;
+}
+
+#cover h1{
+	margin-top: 0px;
+	font-size: 50px;
+	margin-bottom: 0;
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+
+#cover p{
+	font-size: 20px;
+  padding: 0 50px;
+}
+
+/* Personal information */
+
+.personalcontainer{
+    border: 5px solid gold;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .persona{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: gold;
+  }
+  
+
+/* headings */
+#headings{
+	margin-top: 20px;
+}
+
+
+#headings .box{
+	float: left;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+}
+
+#headings .box img{
+	width: 90px;
+}
+
+/* Booking Form Styles */
+#headings {
+    padding: 2rem 0;
+  }
+  
+  .bookingform {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form input[type="submit"],
+  form button {
+    background-color: black;
+    color: gold;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  label {
+    font-size: 1.5em; /* Increase the font size for the Adventure label */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+  }
+  
+  .container {
+    border: 1px solid #ccc; /* Add a border around the container */
+    padding: 10px; /* Add padding to the container for spacing */
+    margin-bottom: 15px; /* Add bottom margin for spacing between containers */
+  }
+  
+  /* Style for individual input sections within the Adventure section */
+  .container > div {
+    margin-bottom: 10px; /* Add bottom margin for spacing between input sections */
+  }
+  
+  /* Style for input labels */
+  .container label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Style for number input fields */
+  .container input[type="number"] {
+    width: 50px; /* Adjust the width of the number input fields */
+    padding: 5px; /* Add padding to the number input fields for spacing */
+  }
+  
+  /* Style for promo code and loyalty section */
+  #promoCode, #show_loyaalty {
+    width: 200px; /* Adjust the width of the input fields */
+    padding: 8px; /* Add padding to the input fields for spacing */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+  
+  .loyalty button {
+    padding: 8px 15px; /* Add padding to the loyalty button for spacing */
+  }
+  
+  /* Style for Book Now and Add to Favorites buttons */
+  #addBooking, #add2fav {
+    padding: 10px 20px; /* Add padding to the buttons for spacing */
+    margin-top: 15px; /* Add top margin for spacing */
+  }
+  
+  /* Add this CSS code to your style.css file or within a <style> tag in your HTML file */
+  
+  .bookingform {
+    background-color: #f0f0f0; /* Set the background color for the booking form */
+    padding: 20px; /* Add padding for spacing inside the form */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+  }
+  
+  /* Style for Adventure section */
+  .bookingform label {
+    font-size: 1.5em; /* Increase the font size for the Adventure label */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+  }
+  
+  .bookingform .container {
+    border: 1px solid #ccc; /* Add a border around the container */
+    padding: 10px; /* Add padding to the container for spacing */
+    margin-bottom: 15px; /* Add bottom margin for spacing between containers */
+  }
+  
+  /* Style for individual input sections within the Adventure section */
+  .bookingform .container > div {
+    margin-bottom: 10px; /* Add bottom margin for spacing between input sections */
+  }
+  
+  /* Style for input labels */
+  .bookingform .container label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Style for number input fields */
+  .bookingform .container input[type="number"] {
+    width: 50px; /* Adjust the width of the number input fields */
+    padding: 5px; /* Add padding to the number input fields for spacing */
+  }
+  
+  /* Style for promo code and loyalty section */
+  .bookingform #promoCode,
+  .bookingform #show_loyaalty {
+    width: 200px; /* Adjust the width of the input fields */
+    padding: 8px; /* Add padding to the input fields for spacing */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+  }
+  
+  .bookingform .loyalty button {
+    padding: 8px 15px; /* Add padding to the loyalty button for spacing */
+  }
+  
+  /* Style for Book Now and Add to Favorites buttons */
+  .bookingform #addBooking,
+  .bookingform #add2fav {
+    padding: 10px 20px; /* Add padding to the buttons for spacing */
+    margin-top: 15px; /* Add top margin for spacing */
+  }
+  /* Hide the default checkboxes */
+  .checkbox input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Style for custom checkbox */
+  .checkbox input[type="checkbox"] + label:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+  
+  /* Style for custom checkbox when checked */
+  .checkbox input[type="checkbox"]:checked + label:before {
+    content: '\2713'; /* Unicode for checkmark symbol */
+    font-size: 14px;
+    color: #000;
+    line-height: 16px;
+    text-align: center;
+  }
+  

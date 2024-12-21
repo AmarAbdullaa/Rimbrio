@@ -1,0 +1,67 @@
+* h3{
+    font-size: 24px;
+    font-family:  'Arial' , sans-serif, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.booking-table {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #0a67a3, #043366);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: black;
+    color: white;
+}
+#table-head th {
+    background-color: black;
+}
+.delete-booking {
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, #0a67a3, #043366);
+    font-size: 20px;
+}
+
+input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    width: 90%;
+    border: none;
+    width: 200px;
+}
+
+button{
+    padding-top: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 16px;
+    width: 200px;
+    cursor: pointer;
+    transition: .5s ease;
+}
